@@ -4,12 +4,12 @@ with open('input.txt') as f:
 	s = f.read().splitlines()
 
 
+s.sort()
 olds = s.copy()
 
 j = 0
 while len(s) > 1:
 	n = len(s)
-	s.sort()
 	i = bisect.bisect_left([x[j] for x in s], '1')
 
 	if i <= n // 2:
@@ -27,7 +27,6 @@ s = olds.copy()
 j = 0
 while len(s) > 1:
 	n = len(s)
-	s.sort()
 	i = bisect.bisect_left([x[j] for x in s], '1')
 
 	if i > n // 2:
