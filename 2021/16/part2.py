@@ -1,4 +1,3 @@
-# 246403935575 too high
 with open('input.txt') as f:
 	s = f.read()
 
